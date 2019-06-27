@@ -1,7 +1,7 @@
 # 2019년 OpenHack 프로젝트 (담소)
 ## [ About ]
 
-[담소 발표 PDF](https://github.com/K-SPOT/iOS/blob/master/publicData/Kspot_UI_description.pdf)
+[담소 발표 PDF](https://github.com/dr-24/iOS/blob/master/PublicData/presentation.pdf)
 
 **담소**는 금연을 하고 싶은 사람들을 위한 웃고 즐길 수 있는 **금연을 돕는 어플리케이션**입니다. 
 
@@ -47,7 +47,7 @@
 
 ## [ WorkFlow ]
 
-![workflow](https://github.com/dr-24/iOS/tree/master/PublicData/workFlow.pdf)
+![workflow](https://github.com/dr-24/iOS/blob/master/PublicData/workFlow.pdf)
 
 
 
