@@ -94,7 +94,13 @@ extension MainFirstTVCell : UIScrollViewDelegate {
         let numberOfItems = collectionView.numberOfItems(inSection: 0)
         let safeIndex = max(0, min(numberOfItems - 1, index))
         currentIdx = safeIndex
-        changeCellColor(currentIdx, isPrev: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.changeCellColor(self.currentIdx, isPrev: false)
+        }
+       
         return safeIndex
     }
     
