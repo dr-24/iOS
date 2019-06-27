@@ -40,7 +40,7 @@ class StatusViewController: UIViewController, ChartViewDelegate, TimeDelegate{
             if !isBleConnected {
                 self.manager?.scan()
             } else {
-                 self.manager?.disConnect()
+                self.manager?.disConnect()
             }
         }
     }
@@ -139,6 +139,7 @@ extension StatusViewController: BlueEar {
         self.bleImgView.image = #imageLiteral(resourceName: "bluetooth")
         self.bleConnectBtn.setImage(#imageLiteral(resourceName: "unconnect"), for: .normal)
         let finalName = (name ?? "").count == 0 ? "Unknown Device" : (name ?? "")
+        addSmokingData()
         simpleAlert(title: "연결 완료", message: "\(finalName)과 연결되었습니다")
     }
     func didDisconnectPeripheral(name: String?) {
@@ -146,6 +147,16 @@ extension StatusViewController: BlueEar {
         self.bleConnectBtn.setImage(#imageLiteral(resourceName: "connect"), for: .normal)
     }
     
+    
+}
+
+extension StatusViewController {
+    func addSmokingData(){
+        let smokingData = SmokingData()
+        smokingData.smokingTime = Date().millisecondsSince1970
+        smokingData.smokingDuration = Int.random(in: 1 ... 10)
+        LogManager.shared.addData(data: smokingData)
+    }
     
     func simpleAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

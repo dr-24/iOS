@@ -11,18 +11,9 @@ import Realm
 import RealmSwift
 
 class ViewController: UIViewController, TimeDelegate {
-
-    @IBAction func addSmokingInfo(_ sender: Any) {
-        let smokingData = SmokingData()
-        smokingData.smokingTime = Date().millisecondsSince1970
-        smokingData.smokingDuration = Int.random(in: 1 ... 10)
-        LogManager.shared.addData(data: smokingData)
-        loadSmokingData()
-    }
    
     @IBOutlet weak var tableView: UITableView!
     
- 
     var smokingAccumulatedData : [SmokingData] = [] {
         didSet {
             tableView.reloadData()
