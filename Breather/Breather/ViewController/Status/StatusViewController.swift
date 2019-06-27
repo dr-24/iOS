@@ -17,6 +17,7 @@ class StatusViewController: UIViewController, ChartViewDelegate, TimeDelegate{
     @IBOutlet weak var avgPerDayLabel: UILabel!
     @IBOutlet weak var bleImgView: UIImageView!
     @IBOutlet weak var bleConnectBtn: UIButton!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     // MARK: - Properties
     var manager: BluetoothManager?
@@ -141,12 +142,21 @@ extension StatusViewController: BlueEar {
         let finalName = (name ?? "").count == 0 ? "Unknown Device" : (name ?? "")
         addSmokingData()
         simpleAlert(title: "연결 완료", message: "\(finalName)과 연결되었습니다")
+        indicatorView.isHidden = true
+        indicatorView.stopAnimating()
     }
+    
     func didDisconnectPeripheral(name: String?) {
         self.bleImgView.image = #imageLiteral(resourceName: "bluetoothgray")
         self.bleConnectBtn.setImage(#imageLiteral(resourceName: "connect"), for: .normal)
+        let finalName = (name ?? "").count == 0 ? "Unknown Device" : (name ?? "")
+        simpleAlert(title: "연결 해제", message: "\(finalName)과 연결 해제되었습니다")
     }
     
+    func didStartScanning() {
+        indicatorView.isHidden = false
+        indicatorView.startAnimating()
+    }
     
 }
 

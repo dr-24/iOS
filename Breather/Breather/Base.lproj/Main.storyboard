@@ -443,6 +443,9 @@
                                     <constraint firstItem="ckq-5S-Imu" firstAttribute="leading" secondItem="Mlr-A3-CYF" secondAttribute="leading" constant="23" id="rUZ-WA-awr"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nfj-2O-Nxn">
+                                <rect key="frame" x="197" y="440.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -450,6 +453,7 @@
                             <constraint firstItem="5YO-k1-fQY" firstAttribute="top" secondItem="Mlr-A3-CYF" secondAttribute="bottom" id="3io-zv-rvN"/>
                             <constraint firstItem="ehX-qb-wAI" firstAttribute="trailing" secondItem="5YO-k1-fQY" secondAttribute="trailing" id="5Rw-sg-ca3"/>
                             <constraint firstItem="ehX-qb-wAI" firstAttribute="bottom" secondItem="sqt-BO-Qx8" secondAttribute="bottom" id="9QI-H9-B4h"/>
+                            <constraint firstItem="nfj-2O-Nxn" firstAttribute="centerY" secondItem="ehX-qb-wAI" secondAttribute="centerY" id="KmZ-xc-JoJ"/>
                             <constraint firstItem="x7V-ZT-pxc" firstAttribute="leading" secondItem="ehX-qb-wAI" secondAttribute="leading" constant="40" id="Tub-ci-nTC"/>
                             <constraint firstItem="ehX-qb-wAI" firstAttribute="trailing" secondItem="x7V-ZT-pxc" secondAttribute="trailing" constant="40" id="bra-j0-6B7"/>
                             <constraint firstItem="Mlr-A3-CYF" firstAttribute="top" secondItem="x7V-ZT-pxc" secondAttribute="bottom" constant="40" id="dAd-hK-FBs"/>
@@ -458,6 +462,7 @@
                             <constraint firstItem="x7V-ZT-pxc" firstAttribute="top" secondItem="ehX-qb-wAI" secondAttribute="top" constant="17" id="khE-mP-wUt"/>
                             <constraint firstItem="ehX-qb-wAI" firstAttribute="trailing" secondItem="Mlr-A3-CYF" secondAttribute="trailing" id="l0u-1e-NTu"/>
                             <constraint firstItem="sqt-BO-Qx8" firstAttribute="leading" secondItem="ehX-qb-wAI" secondAttribute="leading" id="r4j-rG-No4"/>
+                            <constraint firstItem="nfj-2O-Nxn" firstAttribute="centerX" secondItem="ehX-qb-wAI" secondAttribute="centerX" id="rlr-ct-htj"/>
                             <constraint firstItem="sqt-BO-Qx8" firstAttribute="top" secondItem="5YO-k1-fQY" secondAttribute="bottom" id="w33-QD-hTD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ehX-qb-wAI"/>
@@ -472,6 +477,7 @@
                         <outlet property="bleConnectBtn" destination="FIm-JK-u25" id="tEl-M0-RCk"/>
                         <outlet property="bleImgView" destination="jp5-6h-Xrs" id="tGt-hF-Uq6"/>
                         <outlet property="chartView" destination="5YO-k1-fQY" id="vAv-9O-Szi"/>
+                        <outlet property="indicatorView" destination="nfj-2O-Nxn" id="TR3-nL-96P"/>
                         <outlet property="thisWeekCountLabel" destination="wzz-14-Nd8" id="Kd9-Pz-BgZ"/>
                         <outlet property="todayCountLabel" destination="RdR-pC-Mmx" id="ARh-90-jkq"/>
                     </connections>

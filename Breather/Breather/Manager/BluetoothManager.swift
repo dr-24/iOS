@@ -29,6 +29,7 @@ class BluetoothManager: NSObject {
     // MARK: - Functions
     func scan() {
         self.centralManager?.scanForPeripherals(withServices: nil)
+        self.blueEar?.didStartScanning()
     }
     
     func disConnect(){
@@ -44,6 +45,7 @@ extension BluetoothManager: CBCentralManagerDelegate {
         print("\ncentralManagerDidUpdateState \(Date())")
         if central.state == .poweredOn {
             self.centralManager?.scanForPeripherals(withServices: nil)
+            self.blueEar?.didStartScanning()
         } else {
             self.disConnect()
         }
