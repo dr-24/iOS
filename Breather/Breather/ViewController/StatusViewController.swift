@@ -15,10 +15,14 @@ class StatusViewController: UIViewController, ChartViewDelegate, TimeDelegate{
     @IBOutlet weak var thisWeekCountLabel: UILabel!
     @IBOutlet weak var todayCountLabel: UILabel!
     @IBOutlet weak var avgPerDayLabel: UILabel!
+    @IBOutlet weak var bleImgView: UIImageView!
+    @IBOutlet weak var bleConnectBtn: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChartView()
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
