@@ -18,7 +18,7 @@
 
   
 
-  ![main](http://bit.ly/2X5UQUS)
+  ![main](https://media.giphy.com/media/fXQba7AExDXIxAqKuZ/giphy.gif)
 
   
 
@@ -29,7 +29,7 @@
 
   
 
-  ![status](http://bit.ly/2J8kpj0)
+  ![status](https://media.giphy.com/media/QBLowyfjd6Rki1PouQ/giphy.gif)
 
   
 
