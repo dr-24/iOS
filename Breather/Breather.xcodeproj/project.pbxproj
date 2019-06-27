@@ -17,6 +17,9 @@
 		3B575C2A22C53AE900D2EAFF /* TimeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C2922C53AE900D2EAFF /* TimeDelegate.swift */; };
 		3B575C2C22C5404E00D2EAFF /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C2B22C5404E00D2EAFF /* ChartViewController.swift */; };
 		3B575C2E22C5405700D2EAFF /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C2D22C5405700D2EAFF /* MoreViewController.swift */; };
+		3B575C3422C5447600D2EAFF /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3322C5447600D2EAFF /* UICollectionView+Extension.swift */; };
+		3B575C3622C545F900D2EAFF /* BlueEar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3522C545F900D2EAFF /* BlueEar.swift */; };
+		3B575C3822C5461100D2EAFF /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3722C5461100D2EAFF /* BluetoothManager.swift */; };
 		3B7F78C422C3C1550026FB8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78C322C3C1550026FB8B /* AppDelegate.swift */; };
 		3B7F78C622C3C1550026FB8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78C522C3C1550026FB8B /* ViewController.swift */; };
 		3B7F78C922C3C1550026FB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F78C722C3C1550026FB8B /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		3B575C2922C53AE900D2EAFF /* TimeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelegate.swift; sourceTree = "<group>"; };
 		3B575C2B22C5404E00D2EAFF /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		3B575C2D22C5405700D2EAFF /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		3B575C3322C5447600D2EAFF /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		3B575C3522C545F900D2EAFF /* BlueEar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueEar.swift; sourceTree = "<group>"; };
+		3B575C3722C5461100D2EAFF /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		3B7F78C022C3C1550026FB8B /* Breather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7F78C322C3C1550026FB8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7F78C522C3C1550026FB8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 			children = (
 				3B7F78E922C48CF30026FB8B /* NibLoadable.swift */,
 				3B575C2922C53AE900D2EAFF /* TimeDelegate.swift */,
+				3B575C3522C545F900D2EAFF /* BlueEar.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				3B575C1722C4B5B500D2EAFF /* Int+Extension.swift */,
 				3B575C1922C4B73800D2EAFF /* Date+Extension.swift */,
 				3B575C1B22C4DC8700D2EAFF /* DateFormatter+Extension.swift */,
+				3B575C3322C5447600D2EAFF /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 			children = (
 				3B575C1D22C4F0D600D2EAFF /* LogData.swift */,
 				3B575C1F22C4F14500D2EAFF /* LogManager.swift */,
+				3B575C3722C5461100D2EAFF /* BluetoothManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -121,16 +130,48 @@
 		3B575C1422C4AA7800D2EAFF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3B575C2F22C5440200D2EAFF /* Main */,
+				3B575C3022C5442300D2EAFF /* Status */,
+				3B575C3222C5442600D2EAFF /* Chart */,
+				3B575C3122C5442500D2EAFF /* More */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3B575C2F22C5440200D2EAFF /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				3B7F78C522C3C1550026FB8B /* ViewController.swift */,
 				3B7F78E122C483F10026FB8B /* MainFirstTVCell.swift */,
 				3B7F78E322C483FD0026FB8B /* MainSecondTVCell.swift */,
 				3B7F78E722C487010026FB8B /* MainThirdTVCell.swift */,
 				3B7F78E522C486230026FB8B /* MainFirstCVCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3B575C3022C5442300D2EAFF /* Status */ = {
+			isa = PBXGroup;
+			children = (
 				3B575C2322C5047D00D2EAFF /* StatusViewController.swift */,
-				3B575C2B22C5404E00D2EAFF /* ChartViewController.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		3B575C3122C5442500D2EAFF /* More */ = {
+			isa = PBXGroup;
+			children = (
 				3B575C2D22C5405700D2EAFF /* MoreViewController.swift */,
 			);
-			path = ViewController;
+			path = More;
+			sourceTree = "<group>";
+		};
+		3B575C3222C5442600D2EAFF /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				3B575C2B22C5404E00D2EAFF /* ChartViewController.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		3B7F78B722C3C1550026FB8B = {
@@ -319,8 +360,11 @@
 				3B575C1E22C4F0D600D2EAFF /* LogData.swift in Sources */,
 				3B7F78E822C487010026FB8B /* MainThirdTVCell.swift in Sources */,
 				3B7F78C422C3C1550026FB8B /* AppDelegate.swift in Sources */,
+				3B575C3822C5461100D2EAFF /* BluetoothManager.swift in Sources */,
 				3B575C2C22C5404E00D2EAFF /* ChartViewController.swift in Sources */,
+				3B575C3622C545F900D2EAFF /* BlueEar.swift in Sources */,
 				3B7F78E222C483F10026FB8B /* MainFirstTVCell.swift in Sources */,
+				3B575C3422C5447600D2EAFF /* UICollectionView+Extension.swift in Sources */,
 				3B7F78E622C486230026FB8B /* MainFirstCVCell.swift in Sources */,
 				3B575C1C22C4DC8700D2EAFF /* DateFormatter+Extension.swift in Sources */,
 				3B575C1822C4B5B500D2EAFF /* Int+Extension.swift in Sources */,
