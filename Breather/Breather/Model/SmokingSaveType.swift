@@ -42,6 +42,20 @@ enum SmokingSaveType {
         }
     }
     
+    var unit : Int {
+        switch self {
+        case .money:
+            return 10000
+        case .chicken:
+            return 17000
+        case .coffee:
+            return 3000
+        case .sleep:
+            return 60
+            
+        }
+    }
+    
     var img : UIImage {
         switch self {
         case .money:

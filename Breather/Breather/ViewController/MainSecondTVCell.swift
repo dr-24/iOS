@@ -10,15 +10,18 @@ import UIKit
 
 class MainSecondTVCell: UITableViewCell, NibLodable {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var weekOfMonthLbl: UILabel!
+    
+    func configure(timeStamp : Int) {
+        let weekInfo = getWeekInfo(timeStamp: timeStamp)
+        weekOfMonthLbl.text = "\(weekInfo.month)월 \(weekInfo.weekOfMonth)째 주 흡연"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func getWeekInfo(timeStamp : Int) -> (month : Int, weekOfMonth : Int) {
+        let dateFormatter = DateFormatter(timeZone: "UTC", dateFormat: "yyyy-MM-dd hh:mm")
+        guard let smokingDay = dateFormatter.date(from: timeStamp.timeStampToDate(dateFormat: "yyyy-MM-dd hh:mm")) else {return (0,0)}
+        let calendar = Calendar(identifier: .gregorian)
+        let week = calendar.dateComponents([.weekOfMonth, .month], from: smokingDay)
+        return (week.month ?? 0, week.weekOfMonth ?? 0)
     }
-
 }

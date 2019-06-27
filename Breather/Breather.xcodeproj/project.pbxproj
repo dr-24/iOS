@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B575C1622C4B11A00D2EAFF /* SmokingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C1522C4B11A00D2EAFF /* SmokingData.swift */; };
+		3B575C1822C4B5B500D2EAFF /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C1722C4B5B500D2EAFF /* Int+Extension.swift */; };
+		3B575C1A22C4B73800D2EAFF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C1922C4B73800D2EAFF /* Date+Extension.swift */; };
+		3B575C1C22C4DC8700D2EAFF /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C1B22C4DC8700D2EAFF /* DateFormatter+Extension.swift */; };
+		3B575C1E22C4F0D600D2EAFF /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C1D22C4F0D600D2EAFF /* LogData.swift */; };
+		3B575C2022C4F14500D2EAFF /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C1F22C4F14500D2EAFF /* LogManager.swift */; };
+		3B575C2422C5047D00D2EAFF /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C2322C5047D00D2EAFF /* StatusViewController.swift */; };
 		3B7F78C422C3C1550026FB8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78C322C3C1550026FB8B /* AppDelegate.swift */; };
 		3B7F78C622C3C1550026FB8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78C522C3C1550026FB8B /* ViewController.swift */; };
 		3B7F78C922C3C1550026FB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F78C722C3C1550026FB8B /* Main.storyboard */; };
@@ -21,9 +28,18 @@
 		3B7F78EE22C48D220026FB8B /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78ED22C48D220026FB8B /* UIStoryboard+Extension.swift */; };
 		3B7F78F022C495730026FB8B /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78EF22C495730026FB8B /* UICollectionViewCell+Extension.swift */; };
 		3B7F78F222C4A2690026FB8B /* SmokingSaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78F122C4A2690026FB8B /* SmokingSaveType.swift */; };
+		6160BC32C2D8E25B604B1BBD /* Pods_Breather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107697970FA79D5E6A94C084 /* Pods_Breather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		107697970FA79D5E6A94C084 /* Pods_Breather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B575C1522C4B11A00D2EAFF /* SmokingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingData.swift; sourceTree = "<group>"; };
+		3B575C1722C4B5B500D2EAFF /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		3B575C1922C4B73800D2EAFF /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3B575C1B22C4DC8700D2EAFF /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		3B575C1D22C4F0D600D2EAFF /* LogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
+		3B575C1F22C4F14500D2EAFF /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		3B575C2322C5047D00D2EAFF /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		3B7F78C022C3C1550026FB8B /* Breather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7F78C322C3C1550026FB8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7F78C522C3C1550026FB8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +56,8 @@
 		3B7F78ED22C48D220026FB8B /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		3B7F78EF22C495730026FB8B /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		3B7F78F122C4A2690026FB8B /* SmokingSaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingSaveType.swift; sourceTree = "<group>"; };
+		8757C237EE15C14B4B2232FC /* Pods-Breather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breather.debug.xcconfig"; path = "Target Support Files/Pods-Breather/Pods-Breather.debug.xcconfig"; sourceTree = "<group>"; };
+		F9AE13669C4F1F7BF101D1C6 /* Pods-Breather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breather.release.xcconfig"; path = "Target Support Files/Pods-Breather/Pods-Breather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6160BC32C2D8E25B604B1BBD /* Pods_Breather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +86,9 @@
 				3B7F78EB22C48D140026FB8B /* UITableView+Extension.swift */,
 				3B7F78ED22C48D220026FB8B /* UIStoryboard+Extension.swift */,
 				3B7F78EF22C495730026FB8B /* UICollectionViewCell+Extension.swift */,
+				3B575C1722C4B5B500D2EAFF /* Int+Extension.swift */,
+				3B575C1922C4B73800D2EAFF /* Date+Extension.swift */,
+				3B575C1B22C4DC8700D2EAFF /* DateFormatter+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -75,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7F78F122C4A2690026FB8B /* SmokingSaveType.swift */,
+				3B575C1522C4B11A00D2EAFF /* SmokingData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +105,8 @@
 		3B575C1322C4AA6E00D2EAFF /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3B575C1D22C4F0D600D2EAFF /* LogData.swift */,
+				3B575C1F22C4F14500D2EAFF /* LogManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -94,6 +119,7 @@
 				3B7F78E322C483FD0026FB8B /* MainSecondTVCell.swift */,
 				3B7F78E722C487010026FB8B /* MainThirdTVCell.swift */,
 				3B7F78E522C486230026FB8B /* MainFirstCVCell.swift */,
+				3B575C2322C5047D00D2EAFF /* StatusViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -103,6 +129,8 @@
 			children = (
 				3B7F78C222C3C1550026FB8B /* Breather */,
 				3B7F78C122C3C1550026FB8B /* Products */,
+				6FFE2F89F06C5B3C582DBBC6 /* Pods */,
+				C4CA94EEA2644C13C64B5384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +159,23 @@
 			path = Breather;
 			sourceTree = "<group>";
 		};
+		6FFE2F89F06C5B3C582DBBC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8757C237EE15C14B4B2232FC /* Pods-Breather.debug.xcconfig */,
+				F9AE13669C4F1F7BF101D1C6 /* Pods-Breather.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4CA94EEA2644C13C64B5384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				107697970FA79D5E6A94C084 /* Pods_Breather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7F78D222C3C1560026FB8B /* Build configuration list for PBXNativeTarget "Breather" */;
 			buildPhases = (
+				D4DC39EB5E4AEB22CA5B604E /* [CP] Check Pods Manifest.lock */,
 				3B7F78BC22C3C1550026FB8B /* Sources */,
 				3B7F78BD22C3C1550026FB8B /* Frameworks */,
 				3B7F78BE22C3C1550026FB8B /* Resources */,
+				4DE26971AC48F89BF60C9960 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,21 +244,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DE26971AC48F89BF60C9960 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Breather/Pods-Breather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Breather/Pods-Breather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4DC39EB5E4AEB22CA5B604E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Breather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B7F78BC22C3C1550026FB8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B575C2022C4F14500D2EAFF /* LogManager.swift in Sources */,
 				3B7F78E422C483FD0026FB8B /* MainSecondTVCell.swift in Sources */,
 				3B7F78C622C3C1550026FB8B /* ViewController.swift in Sources */,
+				3B575C1622C4B11A00D2EAFF /* SmokingData.swift in Sources */,
 				3B7F78EA22C48CF30026FB8B /* NibLoadable.swift in Sources */,
+				3B575C1E22C4F0D600D2EAFF /* LogData.swift in Sources */,
 				3B7F78E822C487010026FB8B /* MainThirdTVCell.swift in Sources */,
 				3B7F78C422C3C1550026FB8B /* AppDelegate.swift in Sources */,
 				3B7F78E222C483F10026FB8B /* MainFirstTVCell.swift in Sources */,
 				3B7F78E622C486230026FB8B /* MainFirstCVCell.swift in Sources */,
+				3B575C1C22C4DC8700D2EAFF /* DateFormatter+Extension.swift in Sources */,
+				3B575C1822C4B5B500D2EAFF /* Int+Extension.swift in Sources */,
 				3B7F78EC22C48D140026FB8B /* UITableView+Extension.swift in Sources */,
 				3B7F78F222C4A2690026FB8B /* SmokingSaveType.swift in Sources */,
+				3B575C1A22C4B73800D2EAFF /* Date+Extension.swift in Sources */,
 				3B7F78F022C495730026FB8B /* UICollectionViewCell+Extension.swift in Sources */,
+				3B575C2422C5047D00D2EAFF /* StatusViewController.swift in Sources */,
 				3B7F78EE22C48D220026FB8B /* UIStoryboard+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +461,7 @@
 		};
 		3B7F78D322C3C1560026FB8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8757C237EE15C14B4B2232FC /* Pods-Breather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +480,7 @@
 		};
 		3B7F78D422C3C1560026FB8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9AE13669C4F1F7BF101D1C6 /* Pods-Breather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
