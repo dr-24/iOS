@@ -37,8 +37,10 @@ class ViewController: UIViewController, TimeDelegate {
     }
     
     func tableViewSetup(){
+        tableView.refreshControl = UIRefreshControl()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.refreshControl?.addTarget(self, action: #selector(startReloadTableView(_:)), for: .valueChanged)
     }
 }
 
@@ -63,3 +65,9 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
     }
 }
 
+extension ViewController {
+    @objc func startReloadTableView(_ sender: UIRefreshControl){
+        loadSmokingData()
+        sender.endRefreshing()
+    }
+}

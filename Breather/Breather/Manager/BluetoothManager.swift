@@ -58,8 +58,12 @@ extension BluetoothManager: CBCentralManagerDelegate {
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("\ndidConnect", peripheral.name ?? "")
-        self.discoveredPeripheral = peripheral
+        
         self.centralManager?.stopScan()
+        if isBleConnected ?? false{
+            return
+        }
+        self.discoveredPeripheral = peripheral
         self.isBleConnected = true
         self.blueEar?.didConnectPeripheral(name: peripheral.name ?? "")
     }
