@@ -10,13 +10,14 @@ import UIKit
 import Realm
 import RealmSwift
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TimeDelegate {
 
     @IBAction func addSmokingInfo(_ sender: Any) {
         let smokingData = SmokingData()
         smokingData.smokingTime = Date().millisecondsSince1970
         smokingData.smokingDuration = Int.random(in: 1 ... 10)
         LogManager.shared.addData(data: smokingData)
+        loadSmokingData()
     }
    
     @IBOutlet weak var tableView: UITableView!
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
     var smokingAccumulatedData : [SmokingData] = [] {
         didSet {
             tableView.reloadData()
+            let cell = tableView.cell(for: MainFirstTVCell.self)
+            cell.collectionView.reloadData()
         }
     }
     
@@ -36,9 +39,10 @@ class ViewController: UIViewController {
     }
     
     func loadSmokingData(){
-        //todo : 1주일 데이터 필터
-        let realmSmokingData = LogManager.shared.getSmokingData()
-        smokingAccumulatedData = realmSmokingData.sorted(byKeyPath: "smokingTime", ascending: false).map{$0}
+        let realmSmokingData = LogManager.shared.getSmokingData().sorted(byKeyPath: "smokingTime", ascending: false).map{$0}
+        smokingAccumulatedData = realmSmokingData.filter { (item) in
+            return getDayIntervalsFromToday(comepareWith: item.smokingTime) < 7
+        }
     }
     
     func tableViewSetup(){

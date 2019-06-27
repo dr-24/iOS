@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainThirdTVCell: UITableViewCell, NibLodable {
+class MainThirdTVCell: UITableViewCell, NibLodable, TimeDelegate {
     
     enum Day {
         case today
@@ -69,17 +69,8 @@ class MainThirdTVCell: UITableViewCell, NibLodable {
     }
     
     private func passedDay(timeStamp : Int) -> Day {
-        let formatter = DateComponentsFormatter()
-        formatter.allowedUnits = [.day]
-        formatter.unitsStyle = .full
-        
-        let dateFormatter = DateFormatter(timeZone: "UTC", dateFormat: "yyyy-MM-dd hh:mm")
-        let smokingString = timeStamp.timeStampToDate(dateFormat: "yyyy-MM-dd hh:mm")
-        let todayString = Date().millisecondsSince1970.timeStampToDate(dateFormat: "yyyy-MM-dd hh:mm")
-        guard let smokingDay = dateFormatter.date(from: smokingString), let today = dateFormatter.date(from: todayString) else {return .past}
-        
-        let intervalDays = Int(today.timeIntervalSince(smokingDay) / 86400)
-        
+        let intervalDays = getDayIntervalsFromToday(comepareWith: timeStamp)
+
         switch intervalDays {
         case 0 :
             return .today
