@@ -12,6 +12,15 @@
 		3B7F78C922C3C1550026FB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F78C722C3C1550026FB8B /* Main.storyboard */; };
 		3B7F78CB22C3C1560026FB8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F78CA22C3C1560026FB8B /* Assets.xcassets */; };
 		3B7F78CE22C3C1560026FB8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F78CC22C3C1560026FB8B /* LaunchScreen.storyboard */; };
+		3B7F78E222C483F10026FB8B /* MainFirstTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78E122C483F10026FB8B /* MainFirstTVCell.swift */; };
+		3B7F78E422C483FD0026FB8B /* MainSecondTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78E322C483FD0026FB8B /* MainSecondTVCell.swift */; };
+		3B7F78E622C486230026FB8B /* MainFirstCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78E522C486230026FB8B /* MainFirstCVCell.swift */; };
+		3B7F78E822C487010026FB8B /* MainThirdTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78E722C487010026FB8B /* MainThirdTVCell.swift */; };
+		3B7F78EA22C48CF30026FB8B /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78E922C48CF30026FB8B /* NibLoadable.swift */; };
+		3B7F78EC22C48D140026FB8B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78EB22C48D140026FB8B /* UITableView+Extension.swift */; };
+		3B7F78EE22C48D220026FB8B /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78ED22C48D220026FB8B /* UIStoryboard+Extension.swift */; };
+		3B7F78F022C495730026FB8B /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78EF22C495730026FB8B /* UICollectionViewCell+Extension.swift */; };
+		3B7F78F222C4A2690026FB8B /* SmokingSaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78F122C4A2690026FB8B /* SmokingSaveType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		3B7F78CA22C3C1560026FB8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7F78CD22C3C1560026FB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B7F78CF22C3C1560026FB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7F78E122C483F10026FB8B /* MainFirstTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFirstTVCell.swift; sourceTree = "<group>"; };
+		3B7F78E322C483FD0026FB8B /* MainSecondTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSecondTVCell.swift; sourceTree = "<group>"; };
+		3B7F78E522C486230026FB8B /* MainFirstCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFirstCVCell.swift; sourceTree = "<group>"; };
+		3B7F78E722C487010026FB8B /* MainThirdTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThirdTVCell.swift; sourceTree = "<group>"; };
+		3B7F78E922C48CF30026FB8B /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		3B7F78EB22C48D140026FB8B /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3B7F78ED22C48D220026FB8B /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		3B7F78EF22C495730026FB8B /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		3B7F78F122C4A2690026FB8B /* SmokingSaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingSaveType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B575C1022C4AA2D00D2EAFF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3B7F78E922C48CF30026FB8B /* NibLoadable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3B575C1122C4AA3100D2EAFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B7F78EB22C48D140026FB8B /* UITableView+Extension.swift */,
+				3B7F78ED22C48D220026FB8B /* UIStoryboard+Extension.swift */,
+				3B7F78EF22C495730026FB8B /* UICollectionViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B575C1222C4AA6600D2EAFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B7F78F122C4A2690026FB8B /* SmokingSaveType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B575C1322C4AA6E00D2EAFF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3B575C1422C4AA7800D2EAFF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B7F78C522C3C1550026FB8B /* ViewController.swift */,
+				3B7F78E122C483F10026FB8B /* MainFirstTVCell.swift */,
+				3B7F78E322C483FD0026FB8B /* MainSecondTVCell.swift */,
+				3B7F78E722C487010026FB8B /* MainThirdTVCell.swift */,
+				3B7F78E522C486230026FB8B /* MainFirstCVCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		3B7F78B722C3C1550026FB8B = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +117,12 @@
 		3B7F78C222C3C1550026FB8B /* Breather */ = {
 			isa = PBXGroup;
 			children = (
+				3B575C1022C4AA2D00D2EAFF /* Common */,
+				3B575C1122C4AA3100D2EAFF /* Extensions */,
+				3B575C1222C4AA6600D2EAFF /* Model */,
+				3B575C1322C4AA6E00D2EAFF /* Manager */,
+				3B575C1422C4AA7800D2EAFF /* ViewController */,
 				3B7F78C322C3C1550026FB8B /* AppDelegate.swift */,
-				3B7F78C522C3C1550026FB8B /* ViewController.swift */,
 				3B7F78C722C3C1550026FB8B /* Main.storyboard */,
 				3B7F78CA22C3C1560026FB8B /* Assets.xcassets */,
 				3B7F78CC22C3C1560026FB8B /* LaunchScreen.storyboard */,
@@ -135,8 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7F78E422C483FD0026FB8B /* MainSecondTVCell.swift in Sources */,
 				3B7F78C622C3C1550026FB8B /* ViewController.swift in Sources */,
+				3B7F78EA22C48CF30026FB8B /* NibLoadable.swift in Sources */,
+				3B7F78E822C487010026FB8B /* MainThirdTVCell.swift in Sources */,
 				3B7F78C422C3C1550026FB8B /* AppDelegate.swift in Sources */,
+				3B7F78E222C483F10026FB8B /* MainFirstTVCell.swift in Sources */,
+				3B7F78E622C486230026FB8B /* MainFirstCVCell.swift in Sources */,
+				3B7F78EC22C48D140026FB8B /* UITableView+Extension.swift in Sources */,
+				3B7F78F222C4A2690026FB8B /* SmokingSaveType.swift in Sources */,
+				3B7F78F022C495730026FB8B /* UICollectionViewCell+Extension.swift in Sources */,
+				3B7F78EE22C48D220026FB8B /* UIStoryboard+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
