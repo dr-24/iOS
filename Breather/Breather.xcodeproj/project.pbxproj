@@ -20,6 +20,7 @@
 		3B575C3422C5447600D2EAFF /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3322C5447600D2EAFF /* UICollectionView+Extension.swift */; };
 		3B575C3622C545F900D2EAFF /* BlueEar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3522C545F900D2EAFF /* BlueEar.swift */; };
 		3B575C3822C5461100D2EAFF /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3722C5461100D2EAFF /* BluetoothManager.swift */; };
+		3B575C3B22C5BD1200D2EAFF /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B575C3A22C5BD1200D2EAFF /* LikeViewController.swift */; };
 		3B7F78C422C3C1550026FB8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78C322C3C1550026FB8B /* AppDelegate.swift */; };
 		3B7F78C622C3C1550026FB8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F78C522C3C1550026FB8B /* ViewController.swift */; };
 		3B7F78C922C3C1550026FB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F78C722C3C1550026FB8B /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		3B575C3322C5447600D2EAFF /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		3B575C3522C545F900D2EAFF /* BlueEar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueEar.swift; sourceTree = "<group>"; };
 		3B575C3722C5461100D2EAFF /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		3B575C3A22C5BD1200D2EAFF /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		3B7F78C022C3C1550026FB8B /* Breather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7F78C322C3C1550026FB8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7F78C522C3C1550026FB8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				3B575C2F22C5440200D2EAFF /* Main */,
 				3B575C3022C5442300D2EAFF /* Status */,
+				3B575C3922C5BD0300D2EAFF /* Like */,
 				3B575C3222C5442600D2EAFF /* Chart */,
 				3B575C3122C5442500D2EAFF /* More */,
 			);
@@ -172,6 +175,14 @@
 				3B575C2B22C5404E00D2EAFF /* ChartViewController.swift */,
 			);
 			path = Chart;
+			sourceTree = "<group>";
+		};
+		3B575C3922C5BD0300D2EAFF /* Like */ = {
+			isa = PBXGroup;
+			children = (
+				3B575C3A22C5BD1200D2EAFF /* LikeViewController.swift */,
+			);
+			path = Like;
 			sourceTree = "<group>";
 		};
 		3B7F78B722C3C1550026FB8B = {
@@ -364,6 +375,7 @@
 				3B575C2C22C5404E00D2EAFF /* ChartViewController.swift in Sources */,
 				3B575C3622C545F900D2EAFF /* BlueEar.swift in Sources */,
 				3B7F78E222C483F10026FB8B /* MainFirstTVCell.swift in Sources */,
+				3B575C3B22C5BD1200D2EAFF /* LikeViewController.swift in Sources */,
 				3B575C3422C5447600D2EAFF /* UICollectionView+Extension.swift in Sources */,
 				3B7F78E622C486230026FB8B /* MainFirstCVCell.swift in Sources */,
 				3B575C1C22C4DC8700D2EAFF /* DateFormatter+Extension.swift in Sources */,
